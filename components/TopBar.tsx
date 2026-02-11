@@ -1,5 +1,7 @@
 'use client'
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export default function TopBar({
   onShippingStatusClick,
 }: {
@@ -21,7 +23,7 @@ export default function TopBar({
           className="flex items-center gap-2 rounded border border-white/20 bg-white/5 px-3 py-2 min-h-[44px] text-xs font-medium uppercase tracking-wider text-white/90 hover:border-white/30 hover:bg-white/10 hover:text-white transition-colors touch-manipulation"
         >
           <img
-            src="/redasterisk.png"
+            src={`${BASE}/redasterisk.png`}
             alt=""
             aria-hidden
             className="h-5 w-5 object-contain shrink-0"

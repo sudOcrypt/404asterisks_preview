@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
+const basePath = '/404asterisks_preview'
 const nextConfig = {
   output: 'export',
-  basePath: '/404asterisks_preview',
-  assetPrefix: '/404asterisks_preview',
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 }
 
 module.exports = nextConfig

@@ -1,6 +1,7 @@
 'use client'
 
-const LOGO_SRC = '/redasterisk.png'
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const LOGO_SRC = `${BASE}/redasterisk.png`
 
 const FLOATING_ASTERISKS = [
   { top: '8%', left: '12%', size: 'w-16', delay: '0s' },
