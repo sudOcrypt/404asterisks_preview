@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * 404ASTERISKS — Password / Holding Page
  *
@@ -14,20 +16,28 @@
  * and trigger opt-in. Keep payload shape { phone: string } (10-digit US or E.164).
  */
 
+import { useState } from 'react'
 import TopBar from '@/components/TopBar'
 import Hero from '@/components/Hero'
 import ShippingUpdates from '@/components/ShippingUpdates'
 import SmsSignup from '@/components/SmsSignup'
 import Footer from '@/components/Footer'
+import ShippingStatusModal from '@/components/ShippingStatusModal'
 
 export default function Home() {
+  const [shippingModalOpen, setShippingModalOpen] = useState(false)
+
   return (
     <main className="flex min-h-screen min-h-dvh flex-col w-full min-w-0 overflow-x-hidden">
-      <TopBar />
+      <TopBar onShippingStatusClick={() => setShippingModalOpen(true)} />
       <Hero />
       <ShippingUpdates />
       <SmsSignup />
       <Footer />
+      <ShippingStatusModal
+        isOpen={shippingModalOpen}
+        onClose={() => setShippingModalOpen(false)}
+      />
     </main>
   )
 }

@@ -11,10 +11,10 @@ export default function Hero() {
         <span className="inline-block animate-pulse-dot" aria-hidden>.</span>
       </p>
       <p className="mx-auto mt-4 max-w-md text-sm text-white/80 sm:text-base">
-        Get early access texts + 10% off your first drop. No spam.
+        Get early access texts + 10% off your first drop.
       </p>
       <p className="mx-auto mt-2 max-w-md text-xs text-white/60">
-        For order updates, check Instagram story{' '}
+        For order updates, check Instagram story (updates every 3 days).{' '}
         <a
           href="https://instagram.com/404asterisks"
           target="_blank"
@@ -23,7 +23,7 @@ export default function Hero() {
         >
           @404asterisks
         </a>{' '}
-        (updates every 3 days).
+        
       </p>
     </section>
   )

@@ -107,9 +107,9 @@ export default function SmsSignup() {
           <p className="mt-4 text-[11px] leading-relaxed text-white/60">
             By subscribing, you agree to receive recurring automated marketing texts. Msg & data rates may apply. Reply{' '}
             <strong>STOP</strong> to cancel, <strong>HELP</strong> for help.{' '}
-            <a href="/terms" className="underline underline-offset-1 hover:text-white/80">Terms</a>
+            <a href="https://terms.pscr.pt/legal/shop/quv55n-1x/terms_of_service" target="_blank" rel="noopener noreferrer" className="underline underline-offset-1 hover:text-white/80">Terms</a>
             {' · '}
-            <a href="/privacy" className="underline underline-offset-1 hover:text-white/80">Privacy</a>
+            <a href="https://terms.pscr.pt/legal/shop/quv55n-1x/privacy_policy" target="_blank" rel="noopener noreferrer" className="underline underline-offset-1 hover:text-white/80">Privacy</a>
           </p>
         </form>
       </div>
