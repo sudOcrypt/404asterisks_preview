@@ -14,7 +14,7 @@ export default function Hero() {
         Get early access texts + 10% off your first drop. No spam.
       </p>
       <p className="mx-auto mt-2 max-w-md text-xs text-white/60">
-        For order updates, check Instagram{' '}
+        For order updates, check Instagram story{' '}
         <a
           href="https://instagram.com/404asterisks"
           target="_blank"
@@ -23,7 +23,7 @@ export default function Hero() {
         >
           @404asterisks
         </a>{' '}
-        (updates every few days).
+        (updates every 3 days).
       </p>
     </section>
   )

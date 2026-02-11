@@ -53,13 +53,3 @@ body::before {
 .asterisk-float {
   animation: float-drift 12s ease-in-out infinite;
 }
-
-/* Constellation particles */
-@keyframes particle-float {
-  0%, 100% { transform: translate(0, 0); opacity: 0.6; }
-  33% { transform: translate(4px, -8px); opacity: 0.9; }
-  66% { transform: translate(-5px, 5px); opacity: 0.5; }
-}
-.particle-float {
-  animation: particle-float 18s ease-in-out infinite;
-}
